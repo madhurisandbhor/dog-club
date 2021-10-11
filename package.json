@@ -2,7 +2,7 @@
   "name": "dog-club",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://madhurisandbhor.github.io/dog-club",
+  "homepage": "https://madhurisandbhor.github.io/dogs-club",
   "dependencies": {
     "@tensorflow-models/mobilenet": "^2.1.0",
     "@tensorflow/tfjs": "^3.8.0",

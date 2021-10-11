@@ -1,0 +1,13 @@
+version: '3'
+services:
+  dog-gallery:
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./src:/app/src:ro
+    environment:
+      - REACT_APP_NAME=madhuri
+      - CHOKIDAR_USEPOLLING=true
+    # env_files:
+    #     - ./.env

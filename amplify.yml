@@ -1,0 +1,17 @@
+version: 0.1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd image-gallery
+        - yarn install
+    build:
+      commands:
+        - yarn run build
+  artifacts:
+    baseDirectory: /image-gallery/build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

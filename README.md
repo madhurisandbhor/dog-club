@@ -31,8 +31,8 @@ It is deployed with github pages. This is just a demo app with limited functiona
 
 Frontend tech::
 
-React JS with hooks (v17)
-TypeScript
-Styled Components - CSS-in-JS styling framework
-React testing library for Unit tests
+React JS with hooks (v17)\
+TypeScript\
+Styled Components - CSS-in-JS styling framework\
+React testing library for Unit tests\
 EsLint

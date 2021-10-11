@@ -78,7 +78,8 @@ const MainContainer: FC<Props> = ({
       } else {
         picDispatch({ type: 'error', payload: unidentifiedError })
       }
-    } catch (error) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } catch (error: any) {
       const errMsg = error.message || error
       picDispatch({ type: 'error', payload: errMsg })
     }
@@ -106,7 +107,8 @@ const MainContainer: FC<Props> = ({
       } else {
         listDispatch({ type: 'error', payload: unidentifiedError })
       }
-    } catch (error) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } catch (error: any) {
       const errMsg = error.message || error
       listDispatch({ type: 'error', payload: errMsg })
     }

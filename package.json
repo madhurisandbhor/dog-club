@@ -1,8 +1,8 @@
 {
-  "name": "image-gallery",
+  "name": "dog-club",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://madhurisandbhor.github.io/image-gallery/tree/main/image-gallery",
+  "homepage": "https://madhurisandbhor.github.io/dog-club",
   "dependencies": {
     "@tensorflow-models/mobilenet": "^2.1.0",
     "@tensorflow/tfjs": "^3.8.0",

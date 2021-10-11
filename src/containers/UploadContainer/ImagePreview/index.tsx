@@ -51,7 +51,8 @@ const ImagePreview: FC<Props> = ({
           if (matches.length > 0)
             dispatch({ type: 'success', payload: matches })
           else dispatch({ type: 'error', payload: unidentifiedError })
-        } catch (error) {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        } catch (error: any) {
           const errorMsg = error.message ? error.message : error
           dispatch({ type: 'error', payload: errorMsg })
         }

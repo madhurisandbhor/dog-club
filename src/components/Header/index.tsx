@@ -16,10 +16,6 @@ const Header: FC<Props> = ({
 
   return (
     <header className={classes.titleBar}>
-      <input type="text" placeholder="Search.." name="search" />
-      <button type="submit">
-        <i className="fa fa-search" />
-      </button>
       <div
         role="button"
         tabIndex={0}

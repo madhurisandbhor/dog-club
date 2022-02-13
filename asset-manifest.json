@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dogs-club/static/css/main.ed612317.chunk.css",
-    "main.js": "/dogs-club/static/js/main.c3802515.chunk.js",
-    "main.js.map": "/dogs-club/static/js/main.c3802515.chunk.js.map",
+    "main.css": "/dogs-club/static/css/main.d3314f33.chunk.css",
+    "main.js": "/dogs-club/static/js/main.ffbe3b77.chunk.js",
+    "main.js.map": "/dogs-club/static/js/main.ffbe3b77.chunk.js.map",
     "runtime-main.js": "/dogs-club/static/js/runtime-main.a7988f1a.js",
     "runtime-main.js.map": "/dogs-club/static/js/runtime-main.a7988f1a.js.map",
     "static/css/2.59d623fc.chunk.css": "/dogs-club/static/css/2.59d623fc.chunk.css",
@@ -14,7 +14,7 @@
     "static/js/4.bcb5960a.chunk.js.map": "/dogs-club/static/js/4.bcb5960a.chunk.js.map",
     "index.html": "/dogs-club/index.html",
     "static/css/2.59d623fc.chunk.css.map": "/dogs-club/static/css/2.59d623fc.chunk.css.map",
-    "static/css/main.ed612317.chunk.css.map": "/dogs-club/static/css/main.ed612317.chunk.css.map",
+    "static/css/main.d3314f33.chunk.css.map": "/dogs-club/static/css/main.d3314f33.chunk.css.map",
     "static/js/2.713e4394.chunk.js.LICENSE.txt": "/dogs-club/static/js/2.713e4394.chunk.js.LICENSE.txt",
     "static/js/3.e3f5aac4.chunk.js.LICENSE.txt": "/dogs-club/static/js/3.e3f5aac4.chunk.js.LICENSE.txt",
     "static/media/arrow-top.3d2ab518.svg": "/dogs-club/static/media/arrow-top.3d2ab518.svg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.a7988f1a.js",
     "static/js/3.e3f5aac4.chunk.js",
-    "static/css/main.ed612317.chunk.css",
-    "static/js/main.c3802515.chunk.js"
+    "static/css/main.d3314f33.chunk.css",
+    "static/js/main.ffbe3b77.chunk.js"
   ]
 }

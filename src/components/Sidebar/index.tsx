@@ -1,6 +1,5 @@
 import React, { FC, memo } from 'react'
 import withStyles, { WithStylesProps } from 'react-jss'
-import DogsPawIcon from 'images/dog-paw-svgrepo-com.svg'
 import clsx from 'clsx'
 import Loading from 'components/Loading'
 import styles from './styles'
@@ -21,10 +20,6 @@ const Sidebar: FC<Props> = ({
 }: Props): JSX.Element => {
   return (
     <aside className={classes.root}>
-      <b>
-        <img src={DogsPawIcon} alt="dog's paw Icon" />
-        <span>Dogs Club</span>
-      </b>
       <div className={classes.container}>
         {loading ? (
           <Loading id="sidebarList" />

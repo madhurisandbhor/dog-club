@@ -48,6 +48,8 @@ const MainContainer: FC<Props> = ({
     reducer,
     picInitState as PicStateType,
   )
+
+  const { loading, error, data } = picturesState
   const unidentifiedError = 'UnIdentified error'
   const [scrolling, setScrolling] = useState(false)
   const [scrollTop, setScrollTop] = useState(0)
@@ -79,8 +81,8 @@ const MainContainer: FC<Props> = ({
         picDispatch({ type: 'error', payload: unidentifiedError })
       }
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    } catch (error: any) {
-      const errMsg = error.message || error
+    } catch (err: any) {
+      const errMsg = err.message || err
       picDispatch({ type: 'error', payload: errMsg })
     }
   }, [])
@@ -108,8 +110,8 @@ const MainContainer: FC<Props> = ({
         listDispatch({ type: 'error', payload: unidentifiedError })
       }
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    } catch (error: any) {
-      const errMsg = error.message || error
+    } catch (err: any) {
+      const errMsg = err.message || err
       listDispatch({ type: 'error', payload: errMsg })
     }
   }, [])
@@ -154,25 +156,25 @@ const MainContainer: FC<Props> = ({
 
   return (
     <div data-testid="main-id" className={classes.root}>
-      <Sidebar
-        loading={listState.loading}
-        list={list}
-        showImageGallery={showImageGallery}
-        active={active}
-      />
+      <Header openModal={openModal} />
       <div className={classes.main}>
-        <Header openModal={openModal} />
+        <Sidebar
+          loading={listState.loading}
+          list={list}
+          showImageGallery={showImageGallery}
+          active={active}
+        />
         <div className={classes.container}>
           <div className={classes.error}>
-            {picturesState.error || listState.error}
+            {error || listState.error}
           </div>
-          {picturesState.loading ? (
+          {loading ? (
             <Loading id="imageComponent" />
           ) : (
-            picturesState.data.length > 0 && (
+            data.length > 0 && (
               <ImageComponent
                 active={active}
-                photos={picturesState.data as string[]}
+                photos={data as string[]}
               />
             )
           )}

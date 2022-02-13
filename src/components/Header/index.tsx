@@ -1,5 +1,6 @@
 import React, { FC, memo } from 'react'
 import withStyles, { WithStylesProps } from 'react-jss'
+import DogsPawIcon from 'images/dog-paw-svgrepo-com.svg'
 import styles from './styles'
 
 interface Props extends WithStylesProps<typeof styles> {
@@ -10,20 +11,15 @@ const Header: FC<Props> = ({
   classes,
   openModal,
 }: Props): JSX.Element => {
-  const handleUpload = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (e.key === 'Enter') openModal()
-  }
-
   return (
     <header className={classes.titleBar}>
-      <div
-        role="button"
-        tabIndex={0}
-        onKeyDown={handleUpload}
-        onClick={openModal}
-      >
+      <b>
+        <img src={DogsPawIcon} alt="dog's paw Icon" />
+        <p>Dogs Club</p>
+      </b>
+      <button type="button" onClick={openModal}>
         Upload New Image
-      </div>
+      </button>
     </header>
   )
 }

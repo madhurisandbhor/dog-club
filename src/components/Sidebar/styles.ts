@@ -4,25 +4,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     position: 'fixed',
-    '& > b': {
-      width: '100%',
-      height: '6rem',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      borderBottom: '0.1rem solid #C0D4E0',
-      background: 'white',
-      padding: '0 1rem',
-      '& > span': {
-        fontSize: '2.4rem',
-      },
-      '& > img': {
-        maxWidth: '100%',
-        maxHeight: '100%',
-        margin: '0 1rem',
-        padding: '1.5rem 0',
-      },
-    },
   },
   container: {
     width: '100%',

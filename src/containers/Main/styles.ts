@@ -2,19 +2,23 @@ const styles = {
   root: {
     width: '100%',
     display: 'flex',
+    flexDirection: 'column',
     background: '#dbf1ff',
   },
   main: {
-    width: '82%',
-    marginLeft: '18%',
+    width: '100%',
     display: 'flex',
     flexDirection: 'column',
+    height: 'calc(100% - 6rem)',
+    marginTop: '6rem',
   },
   container: {
-    width: '100%',
-    height: 'calc(100% - 6rem)',
     minHeight: 'calc(100vh - 6rem)',
+    marginLeft: '18%',
     position: 'relative',
+    '@media (max-width: 600px)': {
+      marginLeft: '28%',
+    },
     '& > button': {
       position: 'fixed',
       bottom: '5rem',
@@ -22,26 +26,20 @@ const styles = {
       border: '0.3rem solid white',
       textAlign: 'center',
       lineHeight: 1,
-      backgroundColor: 'transparent',
+      backgroundColor: '#fff',
       padding: '1rem',
       outline: 'none',
       borderRadius: '50%',
       transition: 'all .5s ease',
       '&:hover': {
         cursor: 'pointer',
-        backgroundColor: '#fff',
+        backgroundColor: '#02bef7',
       },
     },
   },
   error: {
     color: 'red',
     margin: '1rem auto',
-  },
-  '@media (max-width: 600px)': {
-    main: {
-      width: '72%',
-      marginLeft: '28%',
-    },
   },
   visible: {
     opacity: 1,
@@ -50,6 +48,10 @@ const styles = {
   invisible: {
     opacity: 0,
     transform: 'translateY(3rem)',
+  },
+  loadingWrapper: {
+    position: 'relative',
+    minHeight: '100%',
   },
 }
 

@@ -16,7 +16,6 @@ const styles = {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      borderBottom: '0.1rem solid #C0D4E0',
       background: 'white',
       '& > p': {
         fontSize: '2.4rem',
